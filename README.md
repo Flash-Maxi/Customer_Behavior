@@ -47,6 +47,7 @@ Customer_Behavior/
 
 > Exact column names/types should be confirmed against the CSV header, since minor naming differences can exist between the raw file and the SQL table schema.
 
+
 ## Analysis Workflow
 
 1. **SQL (`Customer_behavior_eda.sql`)** — Loads the data into a working table and runs exploratory queries: revenue by gender, discount-driven high spenders, top-rated products, spend by shipping type, subscriber vs. non-subscriber revenue, discount rate by product, customer segmentation (New/Returning/Loyal) via a `CASE` + CTE, top-3 products per category using `ROW_NUMBER() OVER (PARTITION BY ...)`, repeat-buyer subscription likelihood, and revenue by age group.
@@ -61,6 +62,12 @@ Customer_Behavior/
 - Customers are segmented into **New** (1 prior purchase), **Returning** (2–10), and **Loyal** (10+) tiers.
 - **Top 3 best-selling products per category** are ranked using a window function.
 - Revenue is broken down by **age group** to identify the most valuable demographic.
+
+### 🔹 Dashboard Preview:
+
+#### Sales Overview Dashboard
+
+![Sales Dashboard Overview](images/sales_dashboard_overview.png)
 
 ## Tools & Technologies
 
