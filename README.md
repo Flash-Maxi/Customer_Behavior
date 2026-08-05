@@ -67,7 +67,7 @@ Customer_Behavior/
 
 #### Sales Overview Dashboard
 
-![Sales Dashboard Overview](images/Screenshot 2026-08-05 135153.png)
+![Sales Dashboard Overview](images/Customer_Behavior_Dashboard.png)
 
 ## Tools & Technologies
 
